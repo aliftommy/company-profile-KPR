@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-id="Kopi Padu Rasa · Kopi to Go di 27 Outlet" data-en="Kopi Padu Rasa · Coffee to Go at 27 Outlets">Kopi Padu Rasa · Kopi to Go di 27 Outlet</title>
+  <meta name="description" content="[ISI: deskripsi singkat untuk hasil pencarian Google, sekitar 150 karakter]">
+
+  <!-- Preview saat link dibagikan (WhatsApp, Instagram, dll.). og:image harus URL lengkap. -->
+  <meta property="og:title" content="Kopi Padu Rasa · Kopi to Go di 27 Outlet">
+  <meta property="og:description" content="[ISI: deskripsi singkat untuk hasil pencarian Google, sekitar 150 karakter]">
+  <meta property="og:image" content="https://[domain]/assets/img/og-image.jpg">
+
+  <link rel="icon" type="image/png" href="assets/img/icon-web.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-web.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Dipasang sebelum halaman tampil supaya bahasa yang tersimpan tidak berkedip.
+    document.documentElement.classList.add("js");
+    try {
+      var lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("kpr-lang");
+      if (lang === "id" || lang === "en") document.documentElement.lang = lang;
+    } catch (e) {}
+  </script>
+  <script src="assets/js/script.js" defer></script>
+</head>
+<!-- page-home: header disembunyikan di atas hero dan baru muncul setelah di-scroll -->
+<body class="page-home">
+  <!--
+    CARA MENGISI
+    - Dua bahasa: tulis berpasangan <span lang="id">Teks</span><span lang="en">Text</span>.
+      Teks tanpa pasangan (nama produk, alamat) tampil di kedua bahasa.
+    - Foto: hapus <span class="ph">…</span>, ganti dengan <img src="assets/img/nama-file.jpg" alt="Deskripsi foto">.
+    - Header dan footer ada di partials/header.js dan partials/footer.js.
+      Ubah di sana sekali, semua halaman ikut berubah.
+  -->
+
+  <a class="skip-link" href="#konten"><span lang="id">Langsung ke konten</span><span lang="en">Skip to content</span></a>
+
+  <!-- HEADER: isinya di partials/header.js -->
+  <script src="partials/header.js"></script>
+
+  <main id="konten">
+
+    <!-- ===================== HERO: layar penuh =====================
+         Foto/ilustrasi memenuhi seluruh layar, tanpa teks (pola creators.supercell.com).
+         Hotspot tampil di layar lebar saja.
+    -->
+    <section class="hero" aria-labelledby="hero-title">
+      <!-- Judul untuk Google dan pembaca layar; tidak tampil di layar. -->
+      <h1 class="sr-only" id="hero-title">Kopi Padu Rasa</h1>
+      <div class="hero__frame">
+        <div class="hero__media">
+          <!-- Ganti dengan: <img src="assets/img/hero.jpg" alt="Barista Kopi Padu Rasa menyerahkan kopi di depan outlet"> -->
+          <span class="ph">Foto / ilustrasi depan outlet (layar penuh)<br>2400 × 1400 px, bagian penting di tengah</span>
+        </div>
+
+        <!-- Hotspot: geser posisinya dengan --x dan --y (persen dari kiri dan atas layar). -->
+        <a class="hotspot" href="menu.html" style="--x: 62%; --y: 22%;">
+          <span class="hotspot__dot" aria-hidden="true"></span>
+          <span class="hotspot__label"><span lang="id">Pesan di sini</span><span lang="en">Order here</span></span>
+        </a>
+        <a class="hotspot" href="lokasi.html" style="--x: 74%; --y: 46%; --delay: .8s;">
+          <span class="hotspot__dot" aria-hidden="true"></span>
+          <span class="hotspot__label"><span lang="id">Ambil di sini</span><span lang="en">Pick up here</span></span>
+        </a>
+        <a class="hotspot" href="kemitraan.html" style="--x: 64%; --y: 70%; --delay: 1.6s;">
+          <span class="hotspot__dot" aria-hidden="true"></span>
+          <span class="hotspot__label"><span lang="id">Jadi mitra</span><span lang="en">Partner with us</span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== STATS BAR (pola Supercell) =====================
+         Isi hanya dengan angka yang bisa dibuktikan.
+    -->
+
+    <!-- ===================== TENTANG (ringkas) ===================== -->
+    <section class="section" aria-labelledby="home-tentang-title">
+      <div class="container split">
+        <div>
+          <p class="eyebrow"><span lang="id">Tentang Kami</span><span lang="en">About Us</span></p>
+          <h2 id="home-tentang-title">
+            <span lang="id">[Kenapa Kopi Padu Rasa ada]</span>
+            <span lang="en">[Why Kopi Padu Rasa exists]</span>
+          </h2>
+          <p>
+            <span lang="id">[Ringkasan cerita dalam 2–3 kalimat. Cerita lengkapnya ada di halaman Tentang.]</span>
+            <span lang="en">[Our story in 2–3 sentences. The full story lives on the About page.]</span>
+          </p>
+          <div class="actions">
+            <a class="btn btn--ghost" href="tentang.html"><span lang="id">Baca cerita kami →</span><span lang="en">Read our story →</span></a>
+          </div>
+        </div>
+        <div class="media">
+          <span class="ph">Foto suasana outlet / tim<br>1600 × 1200 px</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MENU FAVORIT ===================== -->
+    <section class="section" aria-labelledby="home-menu-title">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow">Menu</p>
+            <h2 id="home-menu-title"><span lang="id">Menu favorit</span><span lang="en">Customer favorites</span></h2>
+          </div>
+          <a class="btn btn--ghost" href="menu.html"><span lang="id">Lihat semua menu →</span><span lang="en">See the full menu →</span></a>
+        </div>
+        <div class="product-grid">
+          <article class="product">
+            <h3 class="product__name">Kopi Padu Krimi</h3>
+            <div class="product__img"><img src="assets/img/produk/web/kopi-padu-krimi.webp" alt="Es Kopi Padu Krimi" width="600" height="900" loading="lazy"></div>
+            <p class="product__desc"><span lang="id">Rp 13.000</span><span lang="en">Rp 13.000</span></p>
+          </article>
+          <article class="product">
+            <h3 class="product__name">Kopi Padu Aren</h3>
+            <div class="product__img"><img src="assets/img/produk/web/kopi-padu-aren.webp" alt="Es Kopi Padu Aren" width="600" height="900" loading="lazy"></div>
+            <p class="product__desc"><span lang="id">Rp 13.000</span><span lang="en">Rp 13.000</span></p>
+          </article>
+          <article class="product">
+            <h3 class="product__name">Padu Coklat</h3>
+            <div class="product__img"><img src="assets/img/produk/web/coklat.webp" alt="Es Padu Coklat" width="600" height="900" loading="lazy"></div>
+            <p class="product__desc"><span lang="id">Rp 13.000</span><span lang="en">Rp 13.000</span></p>
+          </article>
+          <article class="product">
+            <h3 class="product__name">Padu Matcha</h3>
+            <div class="product__img"><img src="assets/img/produk/web/matcha.webp" alt="Es Matcha" width="600" height="900" loading="lazy"></div>
+            <p class="product__desc"><span lang="id">Rp 13.000</span><span lang="en">Rp 13.000</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== AJAKAN: Lokasi & Kemitraan ===================== -->
+    <section class="section">
+      <div class="container cta-grid">
+        <a class="cta-card" href="lokasi.html">
+          <p class="eyebrow"><span lang="id">Lokasi</span><span lang="en">Locations</span></p>
+          <h2 class="cta-card__title"><span lang="id">27 outlet, cari yang terdekat</span><span lang="en">27 outlets, find the nearest one</span></h2>
+          <p><span lang="id"> </span><span lang="en">[Which cities we serve]</span></p>
+          <span class="cta-card__more"><span lang="id">Lihat lokasi →</span><span lang="en">See locations →</span></span>
+        </a>
+        <a class="cta-card cta-card--dark" href="kemitraan.html">
+          <p class="eyebrow"><span lang="id">Kemitraan</span><span lang="en">Partnership</span></p>
+          <h2 class="cta-card__title"><span lang="id">Buka outlet Kopi Padu Rasa di kotamu</span><span lang="en">Open a Kopi Padu Rasa outlet in your city</span></h2>
+          <p><span lang="id">[Satu kalimat ajakan kemitraan]</span><span lang="en">[One-line partnership pitch]</span></p>
+          <span class="cta-card__more"><span lang="id">Pelajari kemitraan →</span><span lang="en">Learn about partnership →</span></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: isinya di partials/footer.js -->
+  <script src="partials/footer.js"></script>
+</body>
+</html>

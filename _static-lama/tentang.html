@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-id="Tentang Kami · Kopi Padu Rasa" data-en="About Us · Kopi Padu Rasa">Tentang Kami · Kopi Padu Rasa</title>
+  <meta name="description" content="[ISI: deskripsi halaman Tentang, sekitar 150 karakter]">
+
+  <!-- Preview saat link dibagikan (WhatsApp, Instagram, dll.). og:image harus URL lengkap. -->
+  <meta property="og:title" content="Tentang Kami · Kopi Padu Rasa">
+  <meta property="og:description" content="[ISI: deskripsi halaman Tentang, sekitar 150 karakter]">
+  <meta property="og:image" content="https://[domain]/assets/img/og-image.jpg">
+
+  <link rel="icon" type="image/png" href="assets/img/icon-web.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-web.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Dipasang sebelum halaman tampil supaya bahasa yang tersimpan tidak berkedip.
+    document.documentElement.classList.add("js");
+    try {
+      var lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("kpr-lang");
+      if (lang === "id" || lang === "en") document.documentElement.lang = lang;
+    } catch (e) {}
+  </script>
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <!--
+    CARA MENGISI
+    - Dua bahasa: tulis berpasangan <span lang="id">Teks</span><span lang="en">Text</span>.
+      Teks tanpa pasangan (nama produk, alamat) tampil di kedua bahasa.
+    - Foto: hapus <span class="ph">…</span>, ganti dengan <img src="assets/img/nama-file.jpg" alt="Deskripsi foto">.
+    - Header dan footer ada di partials/header.js dan partials/footer.js.
+      Ubah di sana sekali, semua halaman ikut berubah.
+  -->
+
+  <a class="skip-link" href="#konten"><span lang="id">Langsung ke konten</span><span lang="en">Skip to content</span></a>
+
+  <!-- HEADER: isinya di partials/header.js -->
+  <script src="partials/header.js"></script>
+
+  <main id="konten">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow"><span lang="id">Tentang Kami</span><span lang="en">About Us</span></p>
+        <h1 id="page-title">
+          <span lang="id">[Kenapa Kopi Padu Rasa ada]</span>
+          <span lang="en">[Why Kopi Padu Rasa exists]</span>
+        </h1>
+        <p class="page-hero__lead">
+          <span lang="id">[Satu kalimat misi atau keyakinan brand.]</span>
+          <span lang="en">[One sentence on the brand's mission or belief.]</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== CERITA ===================== -->
+    <section class="section" aria-labelledby="cerita-title">
+      <div class="container split">
+        <div>
+          <h2 id="cerita-title"><span lang="id">Cerita kami</span><span lang="en">Our story</span></h2>
+          <p>
+            <span lang="id">[Siapa pendirinya, kapan dan di mana mulai, masalah apa yang ingin diselesaikan.]</span>
+            <span lang="en">[Who founded it, when and where it started, what problem it set out to solve.]</span>
+          </p>
+          <p>
+            <span lang="id">[Prinsip yang dipegang, mis. soal biji kopi, rasa, dan kecepatan penyajian.]</span>
+            <span lang="en">[Principles, e.g. about beans, taste and speed of service.]</span>
+          </p>
+        </div>
+        <div class="media media--portrait">
+          <span class="ph">Foto tim / barista / outlet pertama<br>1200 × 1500 px</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PERJALANAN (pola timeline Supercell) ===================== -->
+    <section class="section" aria-labelledby="perjalanan-title">
+      <div class="container">
+        <h2 class="section__title" id="perjalanan-title"><span lang="id">Perjalanan kami</span><span lang="en">Our journey</span></h2>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="media media--wide"><span class="ph">Foto</span></div>
+            <p class="timeline__year">[20XX]</p>
+            <h3><span lang="id">Outlet pertama</span><span lang="en">Our first outlet</span></h3>
+            <p><span lang="id">[Cerita awal berdiri]</span><span lang="en">[How it all began]</span></p>
+          </li>
+          <li class="timeline__item">
+            <div class="media media--wide"><span class="ph">Foto</span></div>
+            <p class="timeline__year">[20XX]</p>
+            <h3><span lang="id">[Momen penting]</span><span lang="en">[Milestone]</span></h3>
+            <p><span lang="id">[Keterangan singkat]</span><span lang="en">[Short description]</span></p>
+          </li>
+          <li class="timeline__item">
+            <div class="media media--wide"><span class="ph">Foto</span></div>
+            <p class="timeline__year">[20XX]</p>
+            <h3><span lang="id">[Momen penting]</span><span lang="en">[Milestone]</span></h3>
+            <p><span lang="id">[Keterangan singkat]</span><span lang="en">[Short description]</span></p>
+          </li>
+          <li class="timeline__item">
+            <div class="media media--wide"><span class="ph">Foto</span></div>
+            <p class="timeline__year"><span lang="id">Hari ini</span><span lang="en">Today</span></p>
+            <h3><span lang="id">27 outlet</span><span lang="en">27 outlets</span></h3>
+            <p><span lang="id">[Tersebar di kota mana saja]</span><span lang="en">[Which cities we serve]</span></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== NILAI ===================== -->
+    <section class="section" aria-labelledby="nilai-title">
+      <div class="container">
+        <h2 class="section__title" id="nilai-title"><span lang="id">Yang kami pegang</span><span lang="en">What we stand for</span></h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3><span lang="id">[Nilai 1]</span><span lang="en">[Value 1]</span></h3>
+            <p><span lang="id">[Penjelasan singkat]</span><span lang="en">[Short explanation]</span></p>
+          </article>
+          <article class="card">
+            <h3><span lang="id">[Nilai 2]</span><span lang="en">[Value 2]</span></h3>
+            <p><span lang="id">[Penjelasan singkat]</span><span lang="en">[Short explanation]</span></p>
+          </article>
+          <article class="card">
+            <h3><span lang="id">[Nilai 3]</span><span lang="en">[Value 3]</span></h3>
+            <p><span lang="id">[Penjelasan singkat]</span><span lang="en">[Short explanation]</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: isinya di partials/footer.js -->
+  <script src="partials/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-id="Lokasi 27 Outlet · Kopi Padu Rasa" data-en="27 Outlet Locations · Kopi Padu Rasa">Lokasi 27 Outlet · Kopi Padu Rasa</title>
+  <meta name="description" content="[ISI: deskripsi halaman Lokasi, sekitar 150 karakter]">
+
+  <!-- Preview saat link dibagikan (WhatsApp, Instagram, dll.). og:image harus URL lengkap. -->
+  <meta property="og:title" content="Lokasi 27 Outlet · Kopi Padu Rasa">
+  <meta property="og:description" content="[ISI: deskripsi halaman Lokasi, sekitar 150 karakter]">
+  <meta property="og:image" content="https://[domain]/assets/img/og-image.jpg">
+
+  <link rel="icon" type="image/png" href="assets/img/icon-web.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-web.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Dipasang sebelum halaman tampil supaya bahasa yang tersimpan tidak berkedip.
+    document.documentElement.classList.add("js");
+    try {
+      var lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("kpr-lang");
+      if (lang === "id" || lang === "en") document.documentElement.lang = lang;
+    } catch (e) {}
+  </script>
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <!--
+    CARA MENGISI
+    - Dua bahasa: tulis berpasangan <span lang="id">Teks</span><span lang="en">Text</span>.
+      Teks tanpa pasangan (nama produk, alamat) tampil di kedua bahasa.
+    - Foto: hapus <span class="ph">…</span>, ganti dengan <img src="assets/img/nama-file.jpg" alt="Deskripsi foto">.
+    - Header dan footer ada di partials/header.js dan partials/footer.js.
+      Ubah di sana sekali, semua halaman ikut berubah.
+  -->
+
+  <a class="skip-link" href="#konten"><span lang="id">Langsung ke konten</span><span lang="en">Skip to content</span></a>
+
+  <!-- HEADER: isinya di partials/header.js -->
+  <script src="partials/header.js"></script>
+
+  <main id="konten">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow"><span lang="id">Lokasi</span><span lang="en">Locations</span></p>
+        <h1 id="page-title">
+          <span lang="id">27 outlet, cari yang paling dekat</span>
+          <span lang="en">27 outlets, find the closest one</span>
+        </h1>
+        <p class="page-hero__lead">
+          <span lang="id"> </span>
+          <span lang="en">[Which cities/regions we serve, general opening hours.]</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="daftar-outlet-title">
+      <div class="container">
+        <div class="media media--map locations__map">
+          <!-- Tempel embed Google Maps di sini: <iframe src="..." loading="lazy" title="Peta outlet Kopi Padu Rasa"></iframe> -->
+          <span class="ph">Peta sebaran outlet (embed Google Maps)</span>
+        </div>
+
+        <div class="section__head section__head--row">
+          <h2 id="daftar-outlet-title"><span lang="id">Semua outlet</span><span lang="en">All outlets</span></h2>
+          <div class="search">
+            <label for="outlet-search"><span lang="id">Cari outlet atau kota</span><span lang="en">Search outlet or city</span></label>
+            <input id="outlet-search" type="search" autocomplete="off" data-placeholder-id="Mis. Bandung" data-placeholder-en="e.g. Bandung">
+          </div>
+        </div>
+
+        <!-- Satu <li> = satu outlet. Isi kota, nama, alamat, jam buka, dan link Google Maps. -->
+        <ul class="outlet-list" id="outlet-list">
+          <li class="outlet">
+            <span class="outlet__no">01</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">02</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">03</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">04</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">05</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">06</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">07</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">08</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">09</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">10</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">11</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">12</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">13</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">14</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">15</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">16</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">17</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">18</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">19</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">20</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">21</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">22</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">23</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">24</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">25</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">26</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+          <li class="outlet">
+            <span class="outlet__no">27</span>
+            <p class="outlet__city">[Kota]</p>
+            <h3 class="outlet__name">[Nama outlet]</h3>
+            <p class="outlet__addr">[Alamat lengkap]</p>
+            <p class="outlet__hours"><span lang="id">Buka</span><span lang="en">Open</span> [07.00–22.00]</p>
+            <a class="outlet__link" href="#" target="_blank" rel="noopener"><span lang="id">Petunjuk arah</span><span lang="en">Directions</span> →</a>
+          </li>
+        </ul>
+        <p class="outlet-empty" id="outlet-empty" hidden>
+          <span lang="id">Outlet tidak ditemukan. Coba kata kunci lain.</span>
+          <span lang="en">No outlet found. Try another keyword.</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: isinya di partials/footer.js -->
+  <script src="partials/footer.js"></script>
+</body>
+</html>

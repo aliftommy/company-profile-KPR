@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-id="Menu · Kopi Padu Rasa" data-en="Menu · Kopi Padu Rasa">Menu · Kopi Padu Rasa</title>
+  <meta name="description" content="[ISI: deskripsi halaman Menu, sekitar 150 karakter]">
+
+  <!-- Preview saat link dibagikan (WhatsApp, Instagram, dll.). og:image harus URL lengkap. -->
+  <meta property="og:title" content="Menu · Kopi Padu Rasa">
+  <meta property="og:description" content="[ISI: deskripsi halaman Menu, sekitar 150 karakter]">
+  <meta property="og:image" content="https://[domain]/assets/img/og-image.jpg">
+
+  <link rel="icon" type="image/png" href="assets/img/icon-web.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-web.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Dipasang sebelum halaman tampil supaya bahasa yang tersimpan tidak berkedip.
+    document.documentElement.classList.add("js");
+    try {
+      var lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("kpr-lang");
+      if (lang === "id" || lang === "en") document.documentElement.lang = lang;
+    } catch (e) {}
+  </script>
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <!--
+    CARA MENGISI
+    - Dua bahasa: tulis berpasangan <span lang="id">Teks</span><span lang="en">Text</span>.
+      Teks tanpa pasangan (nama produk, alamat) tampil di kedua bahasa.
+    - Foto: hapus <span class="ph">…</span>, ganti dengan <img src="assets/img/nama-file.jpg" alt="Deskripsi foto">.
+    - Header dan footer ada di partials/header.js dan partials/footer.js.
+      Ubah di sana sekali, semua halaman ikut berubah.
+  -->
+
+  <a class="skip-link" href="#konten"><span lang="id">Langsung ke konten</span><span lang="en">Skip to content</span></a>
+
+  <!-- HEADER: isinya di partials/header.js -->
+  <script src="partials/header.js"></script>
+
+  <main id="konten">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow">Menu</p>
+        <h1 id="page-title">
+          <span lang="id">[Judul menu, mis. Racikan andalan kami]</span>
+          <span lang="en">[Menu heading, e.g. Our signature brews]</span>
+        </h1>
+        <p class="page-hero__lead">
+          <span lang="id">[Deskripsi singkat menu atau bahan baku]</span>
+          <span lang="en">[Short description of the menu or ingredients]</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="daftar-menu-title">
+      <div class="container">
+        <h2 class="sr-only" id="daftar-menu-title"><span lang="id">Daftar menu</span><span lang="en">Menu list</span></h2>
+
+        <!-- Tab kategori. Untuk menambah kategori: salin satu tombol .tab dan satu .tab-panel, lalu samakan id-nya. -->
+        <div class="tabs" data-tabs>
+          <div class="tabs__list" role="tablist" aria-label="Kategori menu">
+            <button class="tab" type="button" role="tab" id="tab-kopi" aria-controls="panel-kopi" aria-selected="true"><span lang="id">Kopi</span><span lang="en">Coffee</span></button>
+            <button class="tab" type="button" role="tab" id="tab-nonkopi" aria-controls="panel-nonkopi" aria-selected="false"><span lang="id">Non-Kopi</span><span lang="en">Non-Coffee</span></button>
+            <button class="tab" type="button" role="tab" id="tab-camilan" aria-controls="panel-camilan" aria-selected="false"><span lang="id">Camilan</span><span lang="en">Snacks</span></button>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-kopi" aria-labelledby="tab-kopi" tabindex="0">
+            <!-- Pita "★ Favorit" = <span class="ribbon">. Untuk latar oranye, tambahkan kelas "product--featured" pada <article>. -->
+            <div class="product-grid">
+              <article class="product">
+                <span class="ribbon"><span lang="id">★ Favorit</span><span lang="en">★ Best seller</span></span>
+                <h3 class="product__name">Kopi Padu Krimi</h3>
+                <div class="product__img"><img src="assets/img/produk/web/kopi-padu-krimi.webp" alt="Es Kopi Padu Krimi" width="600" height="900" loading="lazy"></div>
+                <p class="product__desc"><span lang="id">Rp 13.000</span><span lang="en">Rp 13.000</span></p>
+              </article>
+              <article class="product">
+                <span class="ribbon"><span lang="id">★ Favorit</span><span lang="en">★ Best seller</span></span>
+                <h3 class="product__name">Kopi Padu Aren</h3>
+                <div class="product__img"><img src="assets/img/produk/web/kopi-padu-aren.webp" alt="Es Kopi Padu Aren" width="600" height="900" loading="lazy"></div>
+                <p class="product__desc"><span lang="id">Rp 13.000</span><span lang="en">Rp 13.000</span></p>
+              </article>
+              <article class="product">
+                <h3 class="product__name">Kopi Padu Pandan</h3>
+                <div class="product__img"><img src="assets/img/produk/web/kopi-padu-pandan.webp" alt="Es Kopi Padu Pandan" width="600" height="900" loading="lazy"></div>
+                <p class="product__desc"><span lang="id">Rp 13.000</span><span lang="en">Rp 13.000</span></p>
+              </article>
+              <article class="product">
+                <h3 class="product__name">Padu Karamel</h3>
+                <div class="product__img"><img src="assets/img/produk/web/padu-karamel.webp" alt="Es Padu Karamel" width="600" height="900" loading="lazy"></div>
+                <p class="product__desc"><span lang="id">Rp 13.000</span><span lang="en">Rp 13.000</span></p>
+              </article>
+              <article class="product">
+                <h3 class="product__name">Padu Kano</h3>
+                <div class="product__img"><img src="assets/img/produk/web/padu-kano.webp" alt="Es Padu Kano" width="600" height="900" loading="lazy"></div>
+                <p class="product__desc"><span lang="id">Rp 13.000</span><span lang="en">Rp 13.000</span></p>
+              </article>
+              <article class="product">
+                <h3 class="product__name">Berikano</h3>
+                <div class="product__img"><img src="assets/img/produk/web/berikano.webp" alt="Es Berikano" width="600" height="900" loading="lazy"></div>
+                <p class="product__desc"><span lang="id">Rp 13.000</span><span lang="en">Rp 13.000</span></p>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-nonkopi" aria-labelledby="tab-nonkopi" tabindex="0">
+            <div class="product-grid">
+              <article class="product">
+                <span class="ribbon"><span lang="id">★ Favorit</span><span lang="en">★ Best seller</span></span>
+                <h3 class="product__name">Padu Coklat</h3>
+                <div class="product__img"><img src="assets/img/produk/web/coklat.webp" alt="Es Padu Coklat" width="600" height="900" loading="lazy"></div>
+                <p class="product__desc"><span lang="id">Rp 13.000</span><span lang="en">Rp 13.000</span></p>
+              </article>
+              <article class="product">
+                <span class="ribbon"><span lang="id">★ Favorit</span><span lang="en">★ Best seller</span></span>
+                <h3 class="product__name">Matcha</h3>
+                <div class="product__img"><img src="assets/img/produk/web/matcha.webp" alt="Es Matcha" width="600" height="900" loading="lazy"></div>
+                <p class="product__desc"><span lang="id">Rp 13.000</span><span lang="en">Rp 13.000</span></p>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-camilan" aria-labelledby="tab-camilan" tabindex="0">
+            <div class="product-grid">
+              <article class="product">
+                <h3 class="product__name">[Nama produk]</h3>
+                <div class="product__img"><span class="ph">Foto produk<br>PNG/WebP transparan<br>600 &times; 900 px</span></div>
+                <p class="product__desc"><span lang="id">[Deskripsi singkat]</span><span lang="en">[Short description]</span></p>
+              </article>
+              <article class="product">
+                <h3 class="product__name">[Nama produk]</h3>
+                <div class="product__img"><span class="ph">Foto produk<br>PNG/WebP transparan<br>600 &times; 900 px</span></div>
+                <p class="product__desc"><span lang="id">[Deskripsi singkat]</span><span lang="en">[Short description]</span></p>
+              </article>
+              <article class="product">
+                <h3 class="product__name">[Nama produk]</h3>
+                <div class="product__img"><span class="ph">Foto produk<br>PNG/WebP transparan<br>600 &times; 900 px</span></div>
+                <p class="product__desc"><span lang="id">[Deskripsi singkat]</span><span lang="en">[Short description]</span></p>
+              </article>
+              <article class="product">
+                <h3 class="product__name">[Nama produk]</h3>
+                <div class="product__img"><span class="ph">Foto produk<br>PNG/WebP transparan<br>600 &times; 900 px</span></div>
+                <p class="product__desc"><span lang="id">[Deskripsi singkat]</span><span lang="en">[Short description]</span></p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA pesan online dekat produk (pola Tuku). id dipakai tombol "Pesan Online" di menu burger. -->
+        <div class="order-strip" id="pesan-online">
+          <p class="order-strip__text"><span lang="id">Lagi tidak sempat mampir? Pesan lewat aplikasi.</span><span lang="en">No time to stop by? Order through the apps.</span></p>
+          <div class="order-strip__links">
+            <a class="chip" href="#" target="_blank" rel="noopener">GoFood</a>
+            <a class="chip" href="#" target="_blank" rel="noopener">GrabFood</a>
+            <a class="chip" href="#" target="_blank" rel="noopener">ShopeeFood</a>
+            <a class="chip" href="https://wa.me/628218717165?text=Halo%20Kopi%20Padu%20Rasa%2C%20saya%20mau%20pesan." target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: isinya di partials/footer.js -->
+  <script src="partials/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-id="Kemitraan · Kopi Padu Rasa" data-en="Partnership · Kopi Padu Rasa">Kemitraan · Kopi Padu Rasa</title>
+  <meta name="description" content="[ISI: deskripsi halaman Kemitraan, sekitar 150 karakter]">
+
+  <!-- Preview saat link dibagikan (WhatsApp, Instagram, dll.). og:image harus URL lengkap. -->
+  <meta property="og:title" content="Kemitraan · Kopi Padu Rasa">
+  <meta property="og:description" content="[ISI: deskripsi halaman Kemitraan, sekitar 150 karakter]">
+  <meta property="og:image" content="https://[domain]/assets/img/og-image.jpg">
+
+  <link rel="icon" type="image/png" href="assets/img/icon-web.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-web.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Dipasang sebelum halaman tampil supaya bahasa yang tersimpan tidak berkedip.
+    document.documentElement.classList.add("js");
+    try {
+      var lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("kpr-lang");
+      if (lang === "id" || lang === "en") document.documentElement.lang = lang;
+    } catch (e) {}
+  </script>
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <!--
+    CARA MENGISI
+    - Dua bahasa: tulis berpasangan <span lang="id">Teks</span><span lang="en">Text</span>.
+      Teks tanpa pasangan (nama produk, alamat) tampil di kedua bahasa.
+    - Foto: hapus <span class="ph">…</span>, ganti dengan <img src="assets/img/nama-file.jpg" alt="Deskripsi foto">.
+    - Header dan footer ada di partials/header.js dan partials/footer.js.
+      Ubah di sana sekali, semua halaman ikut berubah.
+  -->
+
+  <a class="skip-link" href="#konten"><span lang="id">Langsung ke konten</span><span lang="en">Skip to content</span></a>
+
+  <!-- HEADER: isinya di partials/header.js -->
+  <script src="partials/header.js"></script>
+
+  <main id="konten">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow"><span lang="id">Kemitraan</span><span lang="en">Partnership</span></p>
+        <h1 id="page-title">
+          <span lang="id">Buka outlet Kopi Padu Rasa di kotamu</span>
+          <span lang="en">Open a Kopi Padu Rasa outlet in your city</span>
+        </h1>
+        <p class="page-hero__lead">
+          <span lang="id">[Penjelasan singkat program kemitraan dan siapa yang cocok bergabung.]</span>
+          <span lang="en">[Short explanation of the partnership program and who it is for.]</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== KEUNTUNGAN + ALUR =====================
+         CTA utama halaman ada di sini (pola Supercell: satu ajakan besar).
+    -->
+    <section class="section section--dark on-dark" aria-labelledby="keuntungan-title">
+      <div class="container split split--top">
+        <div>
+          <h2 id="keuntungan-title"><span lang="id">Kenapa bermitra dengan kami</span><span lang="en">Why partner with us</span></h2>
+          <ul class="benefits">
+            <li><span lang="id">[Keuntungan 1]</span><span lang="en">[Benefit 1]</span></li>
+            <li><span lang="id">[Keuntungan 2]</span><span lang="en">[Benefit 2]</span></li>
+            <li><span lang="id">[Keuntungan 3]</span><span lang="en">[Benefit 3]</span></li>
+          </ul>
+          <div class="actions">
+            <!-- Membuka WhatsApp dengan pesan pembuka yang sudah terisi -->
+            <a class="btn btn--primary" href="https://wa.me/628218717165?text=Halo%20Kopi%20Padu%20Rasa%2C%20saya%20tertarik%20dengan%20program%20kemitraan." target="_blank" rel="noopener"><span lang="id">Ajukan Kemitraan</span><span lang="en">Apply Now</span></a>
+            <a class="btn btn--ghost" href="assets/proposal-kemitraan.pdf" download><span lang="id">Unduh Proposal</span><span lang="en">Download Proposal</span></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="steps__title"><span lang="id">Alur kemitraan</span><span lang="en">How it works</span></h3>
+          <!-- Contoh tahapan, sesuaikan. -->
+          <ol class="steps">
+            <li>
+              <h4><span lang="id">Konsultasi &amp; pengajuan</span><span lang="en">Consultation &amp; application</span></h4>
+              <p><span lang="id">[Keterangan]</span><span lang="en">[Details]</span></p>
+            </li>
+            <li>
+              <h4><span lang="id">Survei lokasi</span><span lang="en">Site survey</span></h4>
+              <p><span lang="id">[Keterangan]</span><span lang="en">[Details]</span></p>
+            </li>
+            <li>
+              <h4><span lang="id">Pelatihan barista</span><span lang="en">Barista training</span></h4>
+              <p><span lang="id">[Keterangan]</span><span lang="en">[Details]</span></p>
+            </li>
+            <li>
+              <h4><span lang="id">Outlet dibuka</span><span lang="en">Grand opening</span></h4>
+              <p><span lang="id">[Keterangan]</span><span lang="en">[Details]</span></p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 class="section__title" id="faq-title"><span lang="id">Pertanyaan umum</span><span lang="en">Frequently asked questions</span></h2>
+        <div class="faq">
+          <details>
+            <summary><span lang="id">[Berapa biaya kemitraan?]</span><span lang="en">[How much does a partnership cost?]</span></summary>
+            <p><span lang="id">[Jawaban]</span><span lang="en">[Answer]</span></p>
+          </details>
+          <details>
+            <summary><span lang="id">[Berapa luas tempat yang dibutuhkan?]</span><span lang="en">[How much space is needed?]</span></summary>
+            <p><span lang="id">[Jawaban]</span><span lang="en">[Answer]</span></p>
+          </details>
+          <details>
+            <summary><span lang="id">[Apakah bahan baku disediakan pusat?]</span><span lang="en">[Are supplies provided by head office?]</span></summary>
+            <p><span lang="id">[Jawaban]</span><span lang="en">[Answer]</span></p>
+          </details>
+          <details>
+            <summary><span lang="id">[Berapa lama sampai outlet bisa buka?]</span><span lang="en">[How long until the outlet can open?]</span></summary>
+            <p><span lang="id">[Jawaban]</span><span lang="en">[Answer]</span></p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: isinya di partials/footer.js -->
+  <script src="partials/footer.js"></script>
+</body>
+</html>

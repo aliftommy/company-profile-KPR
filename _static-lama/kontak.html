@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-id="Kontak · Kopi Padu Rasa" data-en="Contact · Kopi Padu Rasa">Kontak · Kopi Padu Rasa</title>
+  <meta name="description" content="[ISI: deskripsi halaman Kontak, sekitar 150 karakter]">
+
+  <!-- Preview saat link dibagikan (WhatsApp, Instagram, dll.). og:image harus URL lengkap. -->
+  <meta property="og:title" content="Kontak · Kopi Padu Rasa">
+  <meta property="og:description" content="[ISI: deskripsi halaman Kontak, sekitar 150 karakter]">
+  <meta property="og:image" content="https://[domain]/assets/img/og-image.jpg">
+
+  <link rel="icon" type="image/png" href="assets/img/icon-web.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-web.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Dipasang sebelum halaman tampil supaya bahasa yang tersimpan tidak berkedip.
+    document.documentElement.classList.add("js");
+    try {
+      var lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("kpr-lang");
+      if (lang === "id" || lang === "en") document.documentElement.lang = lang;
+    } catch (e) {}
+  </script>
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <!--
+    CARA MENGISI
+    - Dua bahasa: tulis berpasangan <span lang="id">Teks</span><span lang="en">Text</span>.
+      Teks tanpa pasangan (nama produk, alamat) tampil di kedua bahasa.
+    - Foto: hapus <span class="ph">…</span>, ganti dengan <img src="assets/img/nama-file.jpg" alt="Deskripsi foto">.
+    - Header dan footer ada di partials/header.js dan partials/footer.js.
+      Ubah di sana sekali, semua halaman ikut berubah.
+  -->
+
+  <a class="skip-link" href="#konten"><span lang="id">Langsung ke konten</span><span lang="en">Skip to content</span></a>
+
+  <!-- HEADER: isinya di partials/header.js -->
+  <script src="partials/header.js"></script>
+
+  <main id="konten">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow"><span lang="id">Kontak</span><span lang="en">Contact</span></p>
+        <h1 id="page-title"><span lang="id">Ngobrol dengan kami</span><span lang="en">Talk to us</span></h1>
+        <p class="page-hero__lead">
+          <span lang="id">[Untuk pertanyaan umum, kerja sama, atau masukan.]</span>
+          <span lang="en">[For general questions, collaborations or feedback.]</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="kanal-title">
+      <div class="container">
+        <h2 class="sr-only" id="kanal-title"><span lang="id">Kanal kontak</span><span lang="en">Contact channels</span></h2>
+        <div class="contact-grid">
+          <a class="contact-card" href="https://wa.me/628218717165" target="_blank" rel="noopener">
+            <span class="contact-card__label">WhatsApp</span>
+            <span class="contact-card__value">0821-8717-165</span>
+          </a>
+          <a class="contact-card" href="mailto:email@domain.com">
+            <span class="contact-card__label">Email</span>
+            <span class="contact-card__value">[email@domain.com]</span>
+          </a>
+          <a class="contact-card" href="https://www.instagram.com/kopipadurasa/" target="_blank" rel="noopener">
+            <span class="contact-card__label">Instagram</span>
+            <span class="contact-card__value">@kopipadurasa</span>
+          </a>
+          <div class="contact-card">
+            <span class="contact-card__label"><span lang="id">Kantor pusat</span><span lang="en">Head office</span></span>
+            <span class="contact-card__value contact-card__value--small">[Alamat kantor pusat]</span>
+          </div>
+        </div>
+
+        <div class="media media--map contact__map">
+          <!-- Tempel embed Google Maps kantor pusat: <iframe src="..." loading="lazy" title="Peta kantor pusat Kopi Padu Rasa"></iframe> -->
+          <span class="ph">Peta kantor pusat (embed Google Maps)</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: isinya di partials/footer.js -->
+  <script src="partials/footer.js"></script>
+</body>
+</html>
